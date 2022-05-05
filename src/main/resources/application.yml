@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: data-analysis
+
+camel:
+  springboot:
+    main-run-controller: true
+
+home-path: .
