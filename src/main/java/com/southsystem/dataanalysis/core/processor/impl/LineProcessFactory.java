@@ -18,6 +18,9 @@ public class LineProcessFactory {
 
     private static Map<LineCodeType, LineProcessor> lineProcessMap;
 
+    /**
+     * Creating factory with all implementations of LineProcessor
+     */
     @Autowired
     private LineProcessFactory(List<LineProcessor> processorList) {
         lineProcessMap = processorList.stream().collect(Collectors.toUnmodifiableMap(LineProcessor::getLineCode, Function.identity()));

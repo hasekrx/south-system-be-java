@@ -30,6 +30,7 @@ public class EntryFileService {
 
         lines.stream()
             .map(String::trim)
+            // getting line processor implementation based on the line code. example 001
             .forEach(line -> lineProcessFactory.getLineProcessor(line.substring(LINE_FIRST_INDEX, LINE_THIRD_INDEX)).processLine(line, fileData));
 
         return fileData;
