@@ -6,4 +6,4 @@ camel:
   springboot:
     main-run-controller: true
 
-home-path: ${user.home}
+home-path: src/test/resources
