@@ -62,7 +62,7 @@ import static org.mockito.Mockito.when;
 @SpringBootTest(classes = {DataAnalysisApplication.class})
 @TestPropertySource(
         locations = "classpath:application.yml")
-public class DataProcessorTest {
+public class DataProcessorITTest {
 
     @Autowired
     private CamelContext camelContext;
